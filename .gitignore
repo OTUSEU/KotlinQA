@@ -1,0 +1,9 @@
+.gradle/*
+.idea/*
+logs/*
+logs_html/*
+**/target/
+**/build
+report/*
+temp/*
+**/*.iml
