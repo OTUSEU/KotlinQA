@@ -27,7 +27,7 @@ class MyClass<T: Any> : TestRunner<T> {
      override fun  runTest(steps: T, test: () -> Unit) {
      ">>> STARTing ===============${steps::class.simpleName}================".log()
          // стоит обращать вниманте на предупреждения IntelliJ
-         //рекомендует стремиться к недублированию текста кода
+         // рекомендует стремиться к недублированию текста кода
          val stepsMemberFunctions = steps::class.declaredFunctions
          stepsMemberFunctions
              .filter { it.name.startsWith("before") }
@@ -107,7 +107,7 @@ fun <T : Any> myClass(initializer: MyClass<T>.() -> Unit): MyClass<T> = MyClass<
 
 /**
  * функция расширения для String с именем .log приименяется см выше
- * логгирование - это не просто печать - log может перенаправляться в рвзные выводы
+ * логгирование - это не просто печать - log может перенаправляться в разные выводы
  * так это можно сделать в одном месте, не затрагивая стандартный вывод
  */
 fun String.log() {
