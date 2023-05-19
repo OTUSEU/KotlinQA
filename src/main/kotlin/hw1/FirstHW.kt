@@ -1,3 +1,5 @@
+package hw1
+
 import kotlin.reflect.full.declaredFunctions
 
 interface TestRunner {
