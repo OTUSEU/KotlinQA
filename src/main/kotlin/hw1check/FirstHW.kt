@@ -1,3 +1,5 @@
+// Проверка Домашнего задания №1
+
 package hw1check
 
 import kotlin.reflect.full.declaredFunctions
